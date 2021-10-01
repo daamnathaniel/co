@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_10_01_160923) do
+ActiveRecord::Schema.define(version: 2021_10_01_170733) do
 
   create_table "blogs", force: :cascade do |t|
     t.string "title"
@@ -19,7 +19,7 @@ ActiveRecord::Schema.define(version: 2021_10_01_160923) do
     t.datetime "updated_at", precision: 6, null: false
   end
 
-  create_table "porfolios", force: :cascade do |t|
+  create_table "portfolios", force: :cascade do |t|
     t.string "title"
     t.string "subtitle"
     t.text "body"
