@@ -4,14 +4,14 @@ class PortfoliosController < ApplicationController
     @portfolio_items = Portfolio.all
   end
 
-  def new
-    @portfolio_item = Portfolio.new
-  end
-
-  def edit
-  end
 
   def show
+  end
+
+
+
+  def new
+    @portfolio_item = Portfolio.new
   end
 
 
@@ -27,6 +27,10 @@ class PortfoliosController < ApplicationController
         format.json { render json: @portfolio_item.errors, status: :unprocessable_entity }
       end
     end
+  end
+
+  def edit
+    @portfolio_item = Portfolio.find(params[:id])
   end
 
   def update

@@ -29,7 +29,7 @@ end
     title: "#{Faker::Book.title}",
     subtitle: "#{Faker::Book.genre}",
     body: "#{Faker::Lorem.paragraph}",
-    main_image: "#{Faker::LoremFlickr.colorized_image }",
-    thumb_image: "#{Faker::LoremFlickr.colorized_image(size: "50x60")}"
+    main_image: "#{Faker::Placeholdit.image }",
+    thumb_image: "#{Faker::Placeholdit.image(size: "50x60")}"
     )
 end
